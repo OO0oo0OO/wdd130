@@ -1,6 +1,7 @@
 :root {
     --general-theme-color: darkblue;
     --general-value-padding: 1px;
+    --width-value-padding: 20px;
 
 }
 
@@ -12,7 +13,7 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: var(--width-value-padding);
 }
 
 h1 {
