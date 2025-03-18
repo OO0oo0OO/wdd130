@@ -3,6 +3,7 @@
     --orange-theme-color: orange;
     --general-value-padding: 1px;
     --width-value-padding: 20px;
+    --border-value: 1px rgb(0, 0, 0/0.2);
 
 }
 
@@ -24,7 +25,7 @@ h1 {
 img {
     width: 150px;
     height: auto;
-    border: 1px solid white;
+    border: var(--border-value);
     padding: var(--general-value-padding);
     box-shadow: 0 0 30px gray;
 
@@ -50,7 +51,7 @@ main p {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px rgb(0, 0, 0/0.2);
+    border: var(--border-value);
     padding: var(--general-value-padding);
     background-color: var(--general-theme-color);
     color: var(--orange-theme-color);
