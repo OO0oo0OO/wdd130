@@ -1,5 +1,6 @@
 :root {
     --general-theme-color: darkblue;
+    --orange-theme-color: orange;
     --general-value-padding: 1px;
     --width-value-padding: 20px;
 
@@ -52,7 +53,7 @@ aside {
     border: 1px rgb(0, 0, 0/0.2);
     padding: var(--general-value-padding);
     background-color: var(--general-theme-color);
-    color: orange;
+    color: var(--orange-theme-color);
     text-align: center;
 }
 
