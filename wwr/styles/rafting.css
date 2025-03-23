@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --main-theme-color: 8ECAE6;
     --contrast-theme-color: FFB703;
