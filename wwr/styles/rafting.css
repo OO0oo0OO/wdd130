@@ -1,0 +1,37 @@
+:root {
+    --main-theme-color: 8ECAE6;
+    --contrast-theme-color: FFB703;
+    --second-contrast-color: 023047;
+    --general-value-padding: 1px;
+    --width-value-padding: 20px;
+    --border-value: 1px rgb(0, 0, 0/0.2);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-decoration-color: var(--contrast-theme-color);
+    position: absolute;
+}
+
+h2 {
+    text-decoration-color: var(--second-contrast-color);
+}
+
+article {
+    position: absolute;
+
+}
+
+article img {
+    float: right;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
