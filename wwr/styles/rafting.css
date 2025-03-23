@@ -41,7 +41,7 @@ article {
 
 article img {
     float: right;
-    position: relative;
+
     object-fit: cover;
 
 }
