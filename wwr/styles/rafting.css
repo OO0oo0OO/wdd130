@@ -5,7 +5,7 @@
     --general-value-padding: 1px;
     --width-value-padding: 10px;
     --general-border-value: 10px;
-    --minimal-border-value: 1px rgb(0, 0, 0/0.2);
+    --minimal-border-value: 1px;
     --page-width: 250px;
     --default-value: 10px;
 }
@@ -17,7 +17,7 @@
 
 h1,
 h2 {
-    font-family: 'Rock Salt' serif;
+    font-family: "Rock Salt" serif;
     width: var(--page-width);
 }
 
