@@ -17,7 +17,7 @@
 
 h1,
 h2 {
-    font-family: "Rock Salt" serif;
+    font-family: "Rock Salt", cursive;
     width: var(--page-width);
 }
 
@@ -50,7 +50,7 @@ article img {
 }
 
 .hero {
-    border: --minimal-border-value solid #f4eded;
+    border: var(--minimal-border-value);
     padding: var(--general-value-padding);
     background-color: var(--blue-light-color);
     height: fit-content;
