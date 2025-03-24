@@ -55,7 +55,7 @@ article img {
     background-color: var(--blue-light-color);
     height: fit-content;
     position: relative;
-    display: inline;
+    display: block;
 }
 
 .hero img {
@@ -63,7 +63,7 @@ article img {
     height: auto;
     float: right;
     clear: both;
-
+    position: relative;
 }
 
 .hero h1 {
