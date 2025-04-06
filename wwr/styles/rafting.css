@@ -145,7 +145,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: right;
+
     align-items: center;
     justify-content: space-around;
 
