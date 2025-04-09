@@ -140,6 +140,27 @@ article {
     text-align: left;
 }
 
+/*
+*/
+.contact-us {
+    color: var(--blue-bold-color);
+    text-decoration-color: var(--blue-bold-color);
+}
+
+.happy-workers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.happy-workers img {
+    object-fit: cover;
+    width: 300px;
+    max-height: 100%;
+}
+
 footer {
     border-top: 1px solid #ccc;
     display: flex;
