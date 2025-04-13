@@ -70,7 +70,8 @@ header {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: "Rock Salt", cursive;
 }
 
@@ -160,9 +161,8 @@ article {
 }
 
 .map iframe {
-
-    width: 250;
-    height: 200;
+    width: 500px;
+    height: 400px;
 }
 
 .happy-workers {
