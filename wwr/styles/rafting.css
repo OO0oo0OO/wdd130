@@ -1,5 +1,7 @@
 :root {
     --blue-light-color: #8ECAE6;
+    --blue-stronger-color: #219EBC;
+    --black-brilliant-color: #121212;
     --orange-color: #FFB703;
     --blue-bold-color: #023047;
     --white-color: #FFFFFF;
@@ -9,13 +11,11 @@
     --minimal-border-value: 1px;
     --page-width: 250px;
     --default-value: 10px;
-
 }
 
 * {
     margin: var(--default-value);
     padding: var(--default-value);
-
 }
 
 header {
@@ -40,6 +40,10 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: space-around;
+}
+
+.history p {
+    color: --black-brilliant-color;
 }
 
 .history-title {
@@ -85,8 +89,9 @@ h2 {
     align-items: center;
 }
 
-a {
+.menu a {
     text-decoration: underline;
+    font-size: x-large;
 }
 
 p {
@@ -94,54 +99,66 @@ p {
 }
 
 article {
-    /*position: absolute;*/
-    width: 500px;
-    height: fit-content;
-    /*float: right;*/
+    width: 700px;
+    height: auto;
 }
 
 .hero div {
     border: var(--minimal-border-value);
     padding: var(--general-value-padding);
-    background-color: var(--blue-light-color);
+    background-color: var(--blue-stronger-color);
     position: relative;
 }
 
 .hero img {
-    display: block;
+    display: inline;
     width: 100%;
     height: auto;
 }
 
 .hero h1 {
     position: absolute;
+    padding: 1px;
+    background-color: var(--white-color);
+    color: var(--black-brilliant-color);
+    opacity: 0.7;
     top: 400px;
     right: 400px;
 }
 
 .hero article {
     position: absolute;
-    display: inline;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
     color: var(--blue-light-color);
-    background-color: var(--blue-light-color);
+    background-color: var(--white-color);
     opacity: 0.7;
     top: 500px;
-    right: 50px;
+    right: 80px;
+    left: 300;
 }
 
 .hero article img {
     float: right;
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
+    object-fit: scale-down;
+    width: 75%;
+    max-height: auto;
+    padding: 10px;
 }
 
 .hero article p {
-    color: var(--blue-bold-color);
+    color: var(--black-brilliant-color);
     text-align: left;
+    width: 80%;
+    max-height: auto;
+    padding: 10px;
 }
 
+
 /*
+
 */
 .contact-us {
     display: flex;
