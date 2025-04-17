@@ -196,11 +196,11 @@ article {
 }
 
 form {
-    width: 550px;
+    width: 600px;
     margin: 0 auto;
     padding: 1px;
     border: 1px solid rgb(0 0 0 / 0.1);
-    border-radius: 0.5rem;
+    border-radius: 1px;
     background-color: #eee;
     display: grid;
     justify-content: center;
@@ -239,14 +239,23 @@ textarea {
 .form-item {
     display: grid;
     align-items: center;
+    vertical-align: middle;
 }
 
-.form-item radio {
-    display: flex;
-    flex-direction: row-reverse;
-
-    justify-content: center;
+.radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-around;
     margin-top: 1px;
+
+
+}
+
+.radio p {
+    grid-column: 1 / 4;
 }
 
 .form-item message {
@@ -259,11 +268,16 @@ textarea {
 
 .contact-info {
     grid-template-columns: 1fr 2fr;
+    justify-content: space-around;
+}
+
+.contact-info input {
+    width: 350px;
+    height: 30px;
 }
 
 .checkbox {
     display: block;
-
 }
 
 .form button {
