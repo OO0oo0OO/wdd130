@@ -238,7 +238,7 @@ textarea {
 
 .form-item {
     display: grid;
-    align-items: left;
+    align-items: center;
 }
 
 .form-item radio {
