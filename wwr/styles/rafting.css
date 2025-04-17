@@ -43,7 +43,7 @@ header {
 }
 
 .history p {
-    color: --black-brilliant-color;
+    color: var(--black-brilliant-color);
 }
 
 .history-title {
@@ -137,14 +137,14 @@ article {
     opacity: 0.7;
     top: 500px;
     right: 80px;
-    left: 300;
+    left: 300px;
 }
 
 .hero article img {
     float: right;
     object-fit: scale-down;
     width: 75%;
-    max-height: auto;
+    max-height: 100%;
     padding: 10px;
 }
 
@@ -152,10 +152,9 @@ article {
     color: var(--black-brilliant-color);
     text-align: left;
     width: 80%;
-    max-height: auto;
+    max-height: 100%;
     padding: 10px;
 }
-
 
 /*
 
@@ -199,11 +198,14 @@ article {
 form {
     width: 550px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1px;
     border: 1px solid rgb(0 0 0 / 0.1);
     border-radius: 0.5rem;
     background-color: #eee;
     display: grid;
+    justify-content: center;
+    text-align: center;
+
 }
 
 fieldset {
@@ -212,17 +214,18 @@ fieldset {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
+
 }
 
 label {
     text-align: right;
-    padding-right: 1rem;
+    padding-right: 1px;
 }
 
 
 .form label {
     text-align: left;
-    padding-right: .5rem;
+    padding-right: 1px;
 }
 
 .form label,
@@ -233,30 +236,30 @@ textarea {
     font-family: Roboto, Arial, sans-serif;
 }
 
-
 .form-item {
     display: grid;
-    align-items: center;
+    align-items: left;
 }
 
 .form-item radio {
-    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: center;
+    margin-top: 1px;
 }
 
 .form-item message {
     width: 600px;
     height: auto;
     text-align: right;
-    padding-right: 1rem;
+    padding-right: 1px;
 
 }
-
 
 .contact-info {
     grid-template-columns: 1fr 2fr;
 }
-
-
 
 .checkbox {
     display: block;
@@ -298,6 +301,7 @@ footer {
     align-items: center;
     justify-content: space-around;
 
+
 }
 
 footer nav {
@@ -310,6 +314,8 @@ footer nav {
 
 footer img {
     object-fit: cover;
-    width: 100%;
-    max-height: 100%;
+    width: 120%;
+    max-height: 120%;
+    padding: 15px;
+
 }
