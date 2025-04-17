@@ -35,11 +35,12 @@ header {
 }
 
 .history {
-    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
     align-items: center;
     justify-content: space-around;
+
 }
 
 .history p {
@@ -119,9 +120,9 @@ article {
 .hero h1 {
     position: absolute;
     padding: 1px;
-    background-color: var(--white-color);
-    color: var(--black-brilliant-color);
-    opacity: 0.7;
+    /*background-color: var(--white-color);*/
+    color: var(--white-color);
+    /*opacity: 0.6;*/
     top: 400px;
     right: 400px;
 }
@@ -131,13 +132,14 @@ article {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    align-items: center;
+    align-items: end;
+
     color: var(--blue-light-color);
     background-color: var(--white-color);
-    opacity: 0.7;
-    top: 500px;
+    opacity: 0.6;
+    top: 600px;
     right: 80px;
-    left: 300px;
+    left: 600px;
 }
 
 .hero article img {
@@ -254,7 +256,8 @@ textarea {
 
 }
 
-.radio p {
+.radio h4,
+p {
     grid-column: 1 / 4;
 }
 
