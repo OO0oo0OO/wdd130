@@ -30,6 +30,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    align-items: end;
+    justify-content: space-around;
     padding: 10px;
     font-family: "Rock Salt", cursive;
 }
@@ -73,6 +75,7 @@ header {
     width: 100%;
     max-height: 100%;
 }
+
 
 h1,
 h2,
@@ -198,7 +201,23 @@ article {
 }
 
 form {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+
     width: 600px;
+    margin: 0 auto;
+    padding: 1px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 1px;
+    background-color: #eee;
+
+
+}
+
+.div-index-form {
+
+    width: 200px;
     margin: 0 auto;
     padding: 1px;
     border: 1px solid rgb(0 0 0 / 0.1);
@@ -208,14 +227,15 @@ form {
     justify-content: center;
     text-align: center;
 
+
 }
 
 fieldset {
     display: grid;
-    grid-gap: .5rem;
-    margin: 1rem;
+    grid-gap: 2px;
+    margin: 10px;
     border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    padding: 1px;
 
 }
 
@@ -227,7 +247,9 @@ label {
 
 .form label {
     text-align: left;
-    padding-right: 1px;
+    margin: 20px;
+    border: 1px;
+    padding: 1px;
 }
 
 .form label,
@@ -242,7 +264,12 @@ textarea {
     display: grid;
     align-items: center;
     vertical-align: middle;
+    margin: 1px;
+    border: 1px;
+    padding: 1px;
 }
+
+
 
 .radio {
     display: grid;
@@ -261,16 +288,9 @@ p {
     grid-column: 1 / 4;
 }
 
-.form-item message {
-    width: 600px;
-    height: auto;
-    text-align: right;
-    padding-right: 1px;
-
-}
 
 .contact-info {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     justify-content: space-around;
 }
 
@@ -279,35 +299,88 @@ p {
     height: 30px;
 }
 
+.form-item message {
+    width: 600px;
+    height: auto;
+    text-align: right;
+    padding-right: 1px;
+}
+
 .checkbox {
     display: block;
 }
 
 .form button {
-    margin: 1rem;
+
     background-color: navy;
     color: #fff;
-    border: none;
+    margin: 0;
+    border: 1px;
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.2rem;
 }
 
-/*
-.form-item {
-    display: grid;
+.div-button-submit {
+    margin: 0;
+    border: 1px;
+    padding: 10px;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    border: 1px;
+    padding: 10px;
 }
 
-.contact-info {
-    grid-template-columns: 1fr 2fr;
+.purpose {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-auto-rows: minmax(50px, auto);*/
+    align-items: center;
+    justify-content: space-around;
 }
 
+.purpose-title {
+    grid-column: 1/4;
+    text-align: center;
+}
 
-.message {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-}*/
+.purpose img {
+    object-fit: contain;
+    width: auto;
+    max-height: 200px;
+}
+
+.trip-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.trip-description {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.trip-description img {
+    object-fit: cover;
+    width: auto;
+    max-height: 250px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 1px;
+
+}
 
 footer {
     border-top: 1px solid #ccc;
@@ -317,7 +390,6 @@ footer {
 
     align-items: center;
     justify-content: space-around;
-
 
 }
 
@@ -335,4 +407,35 @@ footer img {
     max-height: 120%;
     padding: 15px;
 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 0px;
+}
+
+header {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+main {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+aside {
+    grid-column: 1;
+    grid-row: 2;
+    float: left;
+    border-bottom: #219EBC;
+    border-right: #023047;
+}
+
+footer {
+    grid-column: 1 / 3;
+    grid-row: 3;
 }
