@@ -84,8 +84,8 @@ h3 {
 }
 
 h1 {
-    color: var(--white-color);
-    text-decoration-color: var(--white-color);
+    color: var(--blue-bold-color);
+    text-decoration-color: var(--blue-light-color);
 }
 
 h2 {
@@ -357,19 +357,30 @@ p {
     max-height: 200px;
 }
 
-.trip-description {
+.trips {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-around;
 }
 
-.trip-description {
-    grid-column: 1/4;
+.trips div img {
+    object-fit: cover;
+    width: auto;
+    max-height: 250px;
+}
+
+.trips table {
+    grid-column: 1/3;
     text-align: center;
 }
 
-.trip-description img {
+.trip-description {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.trip-description div img {
     object-fit: cover;
     width: auto;
     max-height: 250px;
