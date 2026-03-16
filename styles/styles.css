@@ -5,6 +5,9 @@ main {
 main img {
     width: 150px;
     height: auto;
+    border: 1px;
+    padding: 1rem;
+    box-shadow: #333;
 }
 
 aside {
@@ -20,6 +23,10 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+}
+
+h1 {
+    color: #333;
 }
 
 nav {
