@@ -17,10 +17,17 @@ p {
     box-shadow: 0 0 30px #777;
 }
 
+.shifted-text {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: yellow;
+}
+
 footer {
     border-top: 1px solid #555;
     padding-top: 5px;
     /* Remove the comment below and observe the results. */
 
-    /* clear: both; */
+    clear: both;
 }
