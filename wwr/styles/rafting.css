@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #055a05;
+    --primary-color: ##305CDE;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
@@ -18,8 +18,8 @@ header {
     color: var(--accent1-color);
 }
 
-.header img {
-    width: 80px;
+header img {
+    width: 120px;
     height: auto;
 }
 
@@ -89,4 +89,9 @@ article {
     width: 125px;
     height: auto;
 
+}
+
+.socialmedia img {
+    width: 80px;
+    height: auto;
 }
