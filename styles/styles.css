@@ -100,8 +100,8 @@ main img {
 }
 
 aside h2 {
-    -- position: absolute;
-    top: 340px;
+    position: absolute;
+    top: 7px;
     left: 140px;
-    color: black;
+    color: white;
 }
