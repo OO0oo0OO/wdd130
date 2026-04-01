@@ -39,6 +39,7 @@ aside {
     text-align: center;
     grid-column: 1/2;
     grid-row: 1/2;
+    position: relative;
 }
 
 aside img {
@@ -99,8 +100,8 @@ main img {
 }
 
 aside h2 {
-    position: absolute;
+    -- position: absolute;
     top: 340px;
     left: 140px;
-    color: white;
+    color: black;
 }
