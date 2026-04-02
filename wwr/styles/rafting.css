@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #305CDE;
+    --primary-color: #29AB87;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
@@ -16,11 +16,30 @@
 header {
     background-color: #fff;
     color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    max-width: 1000px;
 }
 
 header img {
     width: 120px;
     height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 10px;
 }
 
 body {
@@ -49,6 +68,27 @@ article {
     padding: 8px;
 }
 
+.menu a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    list-style: none;
+    display: block;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.history h2 {
+    grid-column: 1/4;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -65,7 +105,7 @@ article {
 
 .hero article {
     position: absolute;
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 h1 {
@@ -85,7 +125,11 @@ article {
     padding: 10px;
     opacity: 0.8;
     background-color: var(--accent2-color);
-    color: var(--accent1-color);
+
+}
+
+article p {
+    color: black;
 }
 
 .hero article img {
@@ -99,4 +143,32 @@ article {
 .socialmedia img {
     width: 80px;
     height: auto;
+
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.adventures h2 {
+    grid-column: 1/6;
+    text-align: center;
+
+}
+
+.adventures img {
+    padding: 5px;
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
