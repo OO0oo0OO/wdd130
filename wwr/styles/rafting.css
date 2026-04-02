@@ -57,7 +57,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: gray;
 }
 
 nav,
@@ -73,6 +73,7 @@ article {
     font-size: 1.5rem;
     list-style: none;
     display: block;
+    color: gray;
 }
 
 .history {
@@ -115,8 +116,8 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.8;
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
+    background-color: gray;
+    color: white;
 }
 
 article {
