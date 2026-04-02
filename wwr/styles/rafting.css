@@ -1,6 +1,6 @@
 :root {
     --primary-color: #61607E;
-    --secondary-color: #f4a261;
+    --secondary-color: #112A46;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -117,7 +117,7 @@ h1 {
     text-align: center;
     opacity: 0.8;
     background-color: #ACC8E5;
-    color: #112A46;
+    color: var(--secondary-color)
 }
 
 article {
