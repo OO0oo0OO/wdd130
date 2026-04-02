@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #29AB87;
+    --primary-color: #61607E;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
@@ -57,7 +57,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: gray;
+    color: var(--primary-color);
 }
 
 nav,
@@ -73,7 +73,7 @@ article {
     font-size: 1.5rem;
     list-style: none;
     display: block;
-    color: gray;
+    color: var(--primary-color)
 }
 
 .history {
