@@ -17,36 +17,35 @@ header {
 
 }
 
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
 h1 {
     margin: 1rem;
     font-size: 1.5em;
     color: navy;
-    text-align: center;
+    text-align: left;
 }
 
 form {
     width: 650px;
     margin: 0 auto;
     padding: 1rem;
-    border: 1px solid rgb(0, 0, 0/0.1);
+    border: 1px solid rgb(0, 0, 0 / 0.1);
     border-radius: 0.5rem;
     background-color: #eee;
-    display: grid;
+
 }
 
-fieldset {
+div {
+
     display: grid;
-    gap: .5rem;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0/0.2);
-    padding: 1rem;
-}
-
-legend {
-    padding: 0.5rem;
-    color: navy;
-    font-size: 1.3em;
-
+    grid-template-rows: 30px 1fr;
+    align-items: center;
+    justify-content: center;
 }
 
 label,
@@ -58,9 +57,8 @@ textarea {
 }
 
 label {
-    text-align: right;
+    text-align: left;
     padding-right: 1rem;
-
 }
 
 input,
@@ -68,16 +66,13 @@ select,
 textarea {
     padding: 0.5rem;
     font-size: 1.1rem;
+    width: 580px;
 
-}
-
-input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
-    vertical-align: bottom;
 }
 
 button {
+    align-items: center;
+    justify-content: center;
     margin: 1rem;
     background-color: navy;
     color: #fff;
@@ -85,33 +80,28 @@ button {
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.2rem;
+    width: 580px;
+
 }
 
 button:hover {
     background-color: darkgreen;
 }
 
-footer {
-    margin: 1 rem auto 0;
-    width: 650px;
-    text-align: center;
-    font-size: 0.8em;
-    color: #777;
-    border-top: 1px solid #ccc;
-
-}
-
-.form-item {
-    display: grid;
+fieldset {
     align-items: center;
+    justify-content: center;
 }
 
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-}
-
-.column2 {
-    grid-template-columns: 1fr 2fr;
+div code {
+    display: block;
+    background-color: black;
+    color: #eee;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
 
 }
