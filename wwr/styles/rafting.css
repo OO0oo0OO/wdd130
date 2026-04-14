@@ -305,6 +305,7 @@ button:hover {
 }
 
 form {
+
     background-color: #eee;
     border: 1px solid navy;
     border-radius: 0.5rem;
@@ -331,4 +332,80 @@ form {
 .happy-workers img {
     width: 300px;
     padding: 5px;
+}
+
+/*
+wwr/index.html
+*/
+.purpose {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-auto-rows: minmax(50px, auto);*/
+    align-items: center;
+    justify-content: space-around;
+    object-fit: contain;
+
+}
+
+.purpose-title {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.purpose img {
+
+    width: 250px;
+    max-height: auto;
+    padding: 2px;
+    border: 0px;
+    margin: 0px;
+
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5;
+    border: 3px;
+    padding: 10px;
+}
+
+/*
+trips.html
+*/
+.trip-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    border: 1px;
+    padding: 10px;
+
+}
+
+.descriptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.descriptions img {
+    width: 400px;
+    height: auto;
+}
+
+div call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5;
+    border: 3px;
+    padding: 10px;
 }
