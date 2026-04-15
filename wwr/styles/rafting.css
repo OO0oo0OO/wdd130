@@ -339,12 +339,12 @@ wwr/index.html
 */
 .purpose {
     display: grid;
-    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
     grid-template-columns: 1fr 1fr 1fr;
     /*grid-auto-rows: minmax(50px, auto);*/
     align-items: center;
-    justify-content: space-around;
-    object-fit: contain;
+    justify-content: center;
+    object-fit: cover;
+    padding: 0px;
 
 }
 
@@ -353,7 +353,8 @@ wwr/index.html
     text-align: center;
 }
 
-.purpose img {
+.purpose img,
+figcaption {
 
     width: 250px;
     max-height: auto;
